@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            height: 10vh;
+            width: 10%;
+        
+        }
+        .top {
+            border: 2px solid black;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>User Name :</label>
+        <input type="text" id="u_name"><br><br>
+        <label>Class :</label>
+        <input type="text" id="u_class"><br><br>
+        <label>Age :</label>
+        <input type="number" id="u_age"><br><br>
+        <label>D.O.B :</label>
+        <input type="date" id="u_dob"><br><br>
+        <label>Blood Group :</label>
+        <input type="text" id="u_bg"><br><br>
+        <label>Address :</label>
+        <input type="text" id="u_add"><br><br>
+        <button onclick="demo() ,Demo()"  type="button">Register</button>
+    </form>
+    <table border="2px">
+        <tr>
+            <th>User Name</th>
+            <th>Class</th>
+            <th>Age</th>
+            <th>D.O.B</th>
+            <th>Blood Group</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="class"></td>
+            <td id="age"></td>
+            <td id="dob"></td>
+            <td id="bg"></td>
+            <td id="add" ></td>
+        </tr>
+    </table>
+    <div class="top">
+        <center><img class="one" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy_JmafxKbli9Es5QUvL6d-qIdOd5RmExsvA&s"></center><br>
+        <span>user_name :    </span><span id="i1"></span><br>
+        <span>Class :       </span><span id="i2"></span><br>
+        <span>Age :         </span><span id="i3"></span><br>
+        <span>D.O.B :       </span><span id="i4"></span><br>
+        <span>Blood Group :  </span><span id="i5"></span><br>
+        <span>Address :      </span><span id="i6"></span><br>
+    </div>
+</body>
+<script>
+     function demo()
+     {
+        let uname=document.getElementById('u_name').value
+        document.getElementById('name').innerHTML=uname
+        let uclass=document.getElementById('u_class').value
+        document.getElementById('class').innerHTML=uclass
+        let uage=document.getElementById('u_age').value
+        document.getElementById('age').innerHTML=uage
+        let udob=document.getElementById('u_dob').value
+        document.getElementById('dob').innerHTML=udob
+        let ubg=document.getElementById('u_bg').value
+        document.getElementById('bg').innerHTML=ubg
+        let uadd=document.getElementById('u_add').value
+        document.getElementById('add').innerHTML=uadd
+     }
+     function Demo()
+     {
+        let u1=document.getElementById('u_name').value
+        document.getElementById('i1').innerHTML=u1
+        let u2=document.getElementById('u_class').value
+        document.getElementById('i2').innerHTML=u2
+        let u3=document.getElementById('u_age').value
+        document.getElementById('i3').innerHTML=u3
+        let u4=document.getElementById('u_dob').value
+        document.getElementById('i4').innerHTML=u4
+        let u5=document.getElementById('u_bg').value
+        document.getElementById('i5').innerHTML=u5
+        let u6=document.getElementById('u_add').value
+        document.getElementById('i6').innerHTML=u6
+     }
+     
+</script>
+
+</html>
